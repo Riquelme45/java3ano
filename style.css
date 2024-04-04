@@ -62,7 +62,11 @@ color: var(--verde)
 
 .ativo{
     background-color: var(--botao-ativo);
-    border-color: 4 px solid var(--verde)
+    border-bottom: 4 px solid var(--verde)
+}
+
+.abas-textos{
+    background-color: var(--texto-fundo);
 }
 
 @media screen and (min-width: 768px){
