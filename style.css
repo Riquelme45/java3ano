@@ -47,11 +47,32 @@ color: var(--verde)
     align-items: center;
     width: 100%;
     border-bottom: 4px solid var(--botao-ativo);
-    border-left: 4px solid var(--botao-ativo); 
-    border-right: 4px solid var(--botao-ativo); 
+    border-left: 2px solid var(--botao-ativo); 
+    border-right: 2px solid var(--botao-ativo); 
     border-top: none;
 }
 
-@media screen {
-    
+.botoes:first-child{
+    border-radius: 40px 4opx 0 0;
+}
+
+.botoes{
+    display: block;
+}
+
+.ativo{
+    background-color: var(--botao-ativo);
+    border-color: 4 px solid var(--verde)
+}
+
+@media screen and (min-width: 768px){
+    .botoes{
+        display: flex;
+    }
+    .botoes:child{
+        border-radius: 40px 40px 0 0 0;
+    }
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
+    }
 }
